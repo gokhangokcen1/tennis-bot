@@ -1,0 +1,313 @@
+[0.255s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.255s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x75abb4a45180>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75abb4a44c70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75abb4a44c70>>)
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.455s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/g0kh4n_2/tennis_bot_ws'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extensions ['colcon_meta']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extension 'colcon_meta'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extensions ['ros']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_bringup) by extension 'ros'
+[0.472s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tennis_bot_bringup' with type 'ros.ament_cmake' and name 'tennis_bot_bringup'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extensions ['colcon_pkg']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extension 'colcon_pkg'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extensions ['colcon_meta']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extension 'colcon_meta'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extensions ['ros']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_description) by extension 'ros'
+[0.473s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tennis_bot_description' with type 'ros.ament_cmake' and name 'tennis_bot_description'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extension 'ignore'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extension 'ignore_ament_install'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extensions ['colcon_pkg']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extension 'colcon_pkg'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extensions ['colcon_meta']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extension 'colcon_meta'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extensions ['ros']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_navigation) by extension 'ros'
+[0.475s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tennis_bot_navigation' with type 'ros.ament_python' and name 'tennis_bot_navigation'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extension 'ignore'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extension 'ignore_ament_install'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extensions ['colcon_pkg']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extension 'colcon_pkg'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extensions ['colcon_meta']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extension 'colcon_meta'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extensions ['ros']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennis_bot_perception) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tennis_bot_perception' with type 'ros.ament_python' and name 'tennis_bot_perception'
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.514s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.515s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.517s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/g0kh4n_2/tennis_bot_ws/install
+[0.518s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/humble
+[0.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'cmake_target' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'tennis_bot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description', 'merge_install': False, 'path': '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_description', 'symlink_install': False, 'test_result_base': None}
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.563s] DEBUG:colcon.colcon_core.verb:Building package 'tennis_bot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation', 'merge_install': False, 'path': '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'cmake_target' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.563s] DEBUG:colcon.colcon_core.verb:Building package 'tennis_bot_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception', 'merge_install': False, 'path': '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception', 'symlink_install': False, 'test_result_base': None}
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.563s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.564s] Level 5:colcon.colcon_core.verb:set package 'tennis_bot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.564s] DEBUG:colcon.colcon_core.verb:Building package 'tennis_bot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup', 'merge_install': False, 'path': '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.564s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.565s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.566s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_description' with build type 'ament_cmake'
+[0.566s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_description'
+[0.570s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.570s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.575s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation' with build type 'ament_python'
+[0.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_navigation', 'ament_prefix_path')
+[0.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/hook/ament_prefix_path.ps1'
+[0.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/hook/ament_prefix_path.dsv'
+[0.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/hook/ament_prefix_path.sh'
+[0.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.583s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception' with build type 'ament_python'
+[0.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_perception', 'ament_prefix_path')
+[0.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/hook/ament_prefix_path.ps1'
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/hook/ament_prefix_path.dsv'
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/hook/ament_prefix_path.sh'
+[0.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.586s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble /usr/bin/cmake /home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_description -DCMAKE_INSTALL_PREFIX=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description
+[0.945s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation'
+[0.945s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.945s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.228s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception'
+[1.228s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.229s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble /usr/bin/cmake /home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_description -DCMAKE_INSTALL_PREFIX=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description
+[1.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description -- -j6 -l6
+[1.289s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description -- -j6 -l6
+[1.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description
+[1.338s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennis_bot_description)
+[1.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description
+[1.341s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description' for CMake module files
+[1.342s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description' for CMake config files
+[1.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_description', 'cmake_prefix_path')
+[1.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/hook/cmake_prefix_path.ps1'
+[1.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/hook/cmake_prefix_path.dsv'
+[1.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/hook/cmake_prefix_path.sh'
+[1.345s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/bin'
+[1.345s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/lib/pkgconfig/tennis_bot_description.pc'
+[1.345s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/lib/python3.10/site-packages'
+[1.346s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/bin'
+[1.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.ps1'
+[1.348s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.dsv'
+[1.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.sh'
+[1.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.bash'
+[1.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.zsh'
+[1.352s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/colcon-core/packages/tennis_bot_description)
+[1.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennis_bot_description)
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description' for CMake module files
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description' for CMake config files
+[1.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_description', 'cmake_prefix_path')
+[1.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/hook/cmake_prefix_path.ps1'
+[1.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/hook/cmake_prefix_path.dsv'
+[1.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/hook/cmake_prefix_path.sh'
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/bin'
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/lib/pkgconfig/tennis_bot_description.pc'
+[1.357s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/lib/python3.10/site-packages'
+[1.357s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/bin'
+[1.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.ps1'
+[1.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.dsv'
+[1.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.sh'
+[1.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.bash'
+[1.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.zsh'
+[1.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/colcon-core/packages/tennis_bot_description)
+[1.657s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, test, install_scripts, build_py, build_clib, init_catalog, extract_messages, dist_info, install_egg_info, compile_catalog, sdist, check, egg_info, build_ext, build, alias, bdist_egg, upload_docs, bdist_dumb, install_headers, install_data, saveopts, register, bdist, clean, install_lib, install, develop, setopt, build_scripts, symlink_data, rotate, upload, update_catalog, easy_install
+[1.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build
+[1.663s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_rpm, test, install_scripts, build_py, build_clib, init_catalog, extract_messages, dist_info, install_egg_info, compile_catalog, sdist, check, egg_info, build_ext, build, alias, bdist_egg, upload_docs, bdist_dumb, install_headers, install_data, saveopts, register, bdist, clean, install_lib, install, develop, setopt, build_scripts, symlink_data, rotate, upload, update_catalog, easy_install
+[1.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build
+[2.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build
+[2.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_navigation build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log --install-scripts $base/lib/tennis_bot_navigation --single-version-externally-managed install_data --force
+[2.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build
+[2.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_perception build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/install.log --install-scripts $base/lib/tennis_bot_perception --single-version-externally-managed install_data --force
+[2.462s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation' for CMake module files
+[2.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_navigation build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log --install-scripts $base/lib/tennis_bot_navigation --single-version-externally-managed install_data --force
+[2.463s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation' for CMake config files
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/bin'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/pkgconfig/tennis_bot_navigation.pc'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages'
+[2.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_navigation', 'pythonpath')
+[2.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/hook/pythonpath.ps1'
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/hook/pythonpath.dsv'
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/hook/pythonpath.sh'
+[2.467s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/bin'
+[2.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennis_bot_navigation)
+[2.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/package.ps1'
+[2.468s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/package.dsv'
+[2.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/package.sh'
+[2.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/package.bash'
+[2.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/package.zsh'
+[2.470s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/colcon-core/packages/tennis_bot_navigation)
+[2.473s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception' for CMake module files
+[2.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_perception build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/install.log --install-scripts $base/lib/tennis_bot_perception --single-version-externally-managed install_data --force
+[2.476s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception' for CMake config files
+[2.477s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib'
+[2.477s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/bin'
+[2.477s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/pkgconfig/tennis_bot_perception.pc'
+[2.477s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages'
+[2.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_perception', 'pythonpath')
+[2.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/hook/pythonpath.ps1'
+[2.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/hook/pythonpath.dsv'
+[2.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/hook/pythonpath.sh'
+[2.481s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/bin'
+[2.482s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennis_bot_perception)
+[2.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/package.ps1'
+[2.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/package.dsv'
+[2.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/package.sh'
+[2.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/package.bash'
+[2.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/package.zsh'
+[2.485s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/colcon-core/packages/tennis_bot_perception)
+[2.485s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup' with build type 'ament_cmake'
+[2.485s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup'
+[2.486s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.486s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/opt/ros/humble CMAKE_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake /home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup -DCMAKE_INSTALL_PREFIX=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup
+[3.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/opt/ros/humble CMAKE_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake /home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup -DCMAKE_INSTALL_PREFIX=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup
+[3.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/opt/ros/humble CMAKE_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup -- -j6 -l6
+[3.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/opt/ros/humble CMAKE_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup -- -j6 -l6
+[3.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/opt/ros/humble CMAKE_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup
+[3.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennis_bot_bringup)
+[3.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/opt/ros/humble CMAKE_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup
+[3.429s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup' for CMake module files
+[3.430s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup' for CMake config files
+[3.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_bringup', 'cmake_prefix_path')
+[3.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/hook/cmake_prefix_path.ps1'
+[3.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/hook/cmake_prefix_path.dsv'
+[3.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/hook/cmake_prefix_path.sh'
+[3.434s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/bin'
+[3.434s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/lib/pkgconfig/tennis_bot_bringup.pc'
+[3.434s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/lib/python3.10/site-packages'
+[3.434s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/bin'
+[3.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.ps1'
+[3.435s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.dsv'
+[3.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.sh'
+[3.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.bash'
+[3.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.zsh'
+[3.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/colcon-core/packages/tennis_bot_bringup)
+[3.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennis_bot_bringup)
+[3.438s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup' for CMake module files
+[3.438s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup' for CMake config files
+[3.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennis_bot_bringup', 'cmake_prefix_path')
+[3.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/hook/cmake_prefix_path.ps1'
+[3.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/hook/cmake_prefix_path.dsv'
+[3.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/hook/cmake_prefix_path.sh'
+[3.440s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/bin'
+[3.440s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/lib/pkgconfig/tennis_bot_bringup.pc'
+[3.440s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/lib/python3.10/site-packages'
+[3.441s] Level 1:colcon.colcon_core.environment:checking '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/bin'
+[3.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.ps1'
+[3.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.dsv'
+[3.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.sh'
+[3.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.bash'
+[3.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.zsh'
+[3.443s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/colcon-core/packages/tennis_bot_bringup)
+[3.444s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.445s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.447s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.447s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.558s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.559s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.559s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[3.559s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.560s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g0kh4n_2/tennis_bot_ws/install/local_setup.ps1'
+[3.561s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g0kh4n_2/tennis_bot_ws/install/_local_setup_util_ps1.py'
+[3.563s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g0kh4n_2/tennis_bot_ws/install/setup.ps1'
+[3.564s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g0kh4n_2/tennis_bot_ws/install/local_setup.sh'
+[3.565s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g0kh4n_2/tennis_bot_ws/install/_local_setup_util_sh.py'
+[3.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g0kh4n_2/tennis_bot_ws/install/setup.sh'
+[3.568s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g0kh4n_2/tennis_bot_ws/install/local_setup.bash'
+[3.568s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g0kh4n_2/tennis_bot_ws/install/setup.bash'
+[3.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g0kh4n_2/tennis_bot_ws/install/local_setup.zsh'
+[3.570s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g0kh4n_2/tennis_bot_ws/install/setup.zsh'

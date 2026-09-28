@@ -1,0 +1,49 @@
+[1.302s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_navigation build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log --install-scripts $base/lib/tennis_bot_navigation --single-version-externally-managed install_data
+[1.528s] running egg_info
+[1.529s] creating ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info
+[1.531s] writing ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/PKG-INFO
+[1.532s] writing dependency_links to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/dependency_links.txt
+[1.532s] writing entry points to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/entry_points.txt
+[1.532s] writing requirements to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/requires.txt
+[1.532s] writing top-level names to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/top_level.txt
+[1.532s] writing manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.534s] reading manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.536s] writing manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.536s] running build
+[1.536s] running build_py
+[1.536s] creating /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build
+[1.537s] creating /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib
+[1.537s] creating /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation
+[1.538s] copying tennis_bot_navigation/__init__.py -> /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation
+[1.539s] copying tennis_bot_navigation/cmd_vel_relay_node.py -> /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation
+[1.539s] copying tennis_bot_navigation/collection_planner_node.py -> /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation
+[1.539s] running install
+[1.539s] running install_lib
+[1.540s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+[1.541s] copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation/__init__.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+[1.541s] copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation/cmd_vel_relay_node.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+[1.542s] copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation/collection_planner_node.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+[1.542s] byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation/__init__.py to __init__.cpython-310.pyc
+[1.543s] byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation/cmd_vel_relay_node.py to cmd_vel_relay_node.cpython-310.pyc
+[1.544s] byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation/collection_planner_node.py to collection_planner_node.cpython-310.pyc
+[1.546s] running install_data
+[1.546s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index
+[1.547s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index/resource_index
+[1.547s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index/resource_index/packages
+[1.548s] copying resource/tennis_bot_navigation -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index/resource_index/packages
+[1.548s] copying package.xml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation
+[1.548s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+[1.549s] copying launch/mapping.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+[1.549s] copying launch/navigation.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+[1.549s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[1.550s] copying config/slam_toolbox.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[1.550s] copying config/nav2_params.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[1.550s] copying config/planner.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[1.551s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/maps
+[1.551s] running install_egg_info
+[1.554s] Copying ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation-0.0.0-py3.10.egg-info
+[1.556s] running install_scripts
+[1.578s] Installing cmd_vel_relay_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[1.579s] Installing collection_planner_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[1.579s] writing list of installed files to '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log'
+[1.639s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_navigation build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log --install-scripts $base/lib/tennis_bot_navigation --single-version-externally-managed install_data

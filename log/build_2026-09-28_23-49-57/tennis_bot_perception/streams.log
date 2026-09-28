@@ -1,0 +1,21 @@
+[2.179s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build --no-deps symlink_data --force
+[2.443s] running develop
+[2.629s] running egg_info
+[2.630s] writing tennis_bot_perception.egg-info/PKG-INFO
+[2.631s] writing dependency_links to tennis_bot_perception.egg-info/dependency_links.txt
+[2.631s] writing entry points to tennis_bot_perception.egg-info/entry_points.txt
+[2.631s] writing requirements to tennis_bot_perception.egg-info/requires.txt
+[2.631s] writing top-level names to tennis_bot_perception.egg-info/top_level.txt
+[2.634s] reading manifest file 'tennis_bot_perception.egg-info/SOURCES.txt'
+[2.635s] writing manifest file 'tennis_bot_perception.egg-info/SOURCES.txt'
+[2.638s] running build_ext
+[2.638s] Creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis-bot-perception.egg-link (link to .)
+[2.639s] Installing ball_detector_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/tennis_bot_perception
+[2.639s] 
+[2.640s] Installed /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception
+[2.640s] running symlink_data
+[2.640s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/resource/tennis_bot_perception -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/ament_index/resource_index/packages
+[2.641s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/package.xml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception
+[2.642s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/launch/perception.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/launch
+[2.642s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/config/ball_detector.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/config
+[2.696s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build --no-deps symlink_data --force

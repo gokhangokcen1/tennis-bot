@@ -1,0 +1,3 @@
+[console_scripts]
+ball_detector_node = tennis_bot_perception.ball_detector_node:main
+

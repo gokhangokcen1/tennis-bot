@@ -1,0 +1,23 @@
+running develop
+running egg_info
+writing tennis_bot_navigation.egg-info/PKG-INFO
+writing dependency_links to tennis_bot_navigation.egg-info/dependency_links.txt
+writing entry points to tennis_bot_navigation.egg-info/entry_points.txt
+writing requirements to tennis_bot_navigation.egg-info/requires.txt
+writing top-level names to tennis_bot_navigation.egg-info/top_level.txt
+reading manifest file 'tennis_bot_navigation.egg-info/SOURCES.txt'
+writing manifest file 'tennis_bot_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis-bot-navigation.egg-link (link to .)
+Installing cmd_vel_relay_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+Installing collection_planner_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+
+Installed /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation
+running symlink_data
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/resource/tennis_bot_navigation -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/package.xml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/launch/mapping.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/launch/navigation.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/config/slam_toolbox.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/config/nav2_params.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/config/planner.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config

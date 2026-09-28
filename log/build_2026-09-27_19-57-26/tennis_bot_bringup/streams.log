@@ -1,0 +1,46 @@
+[0.387s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup -DCMAKE_INSTALL_PREFIX=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup
+[0.686s] -- The C compiler identification is GNU 11.4.0
+[1.331s] -- The CXX compiler identification is GNU 11.4.0
+[1.769s] -- Detecting C compiler ABI info
+[1.985s] -- Detecting C compiler ABI info - done
+[1.993s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.993s] -- Detecting C compile features
+[1.995s] -- Detecting C compile features - done
+[2.000s] -- Detecting CXX compiler ABI info
+[2.214s] -- Detecting CXX compiler ABI info - done
+[2.221s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.221s] -- Detecting CXX compile features
+[2.221s] -- Detecting CXX compile features - done
+[2.228s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.385s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.521s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.617s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.619s] -- Added test 'lint_cmake' to check CMake code style
+[2.620s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.623s] -- Added test 'xmllint' to check XML markup files
+[2.626s] -- Configuring done
+[2.636s] -- Generating done
+[2.639s] -- Build files have been written to: /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup
+[2.645s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup -DCMAKE_INSTALL_PREFIX=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup
+[2.647s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup -- -j6 -l6
+[2.689s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup -- -j6 -l6
+[2.692s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup
+[2.699s] -- Install configuration: ""
+[2.699s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/launch
+[2.701s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/launch/tennis_bot.launch.py
+[2.703s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/ament_index/resource_index/package_run_dependencies/tennis_bot_bringup
+[2.704s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/ament_index/resource_index/parent_prefix_path/tennis_bot_bringup
+[2.705s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/environment/ament_prefix_path.sh
+[2.705s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/environment/ament_prefix_path.dsv
+[2.705s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/environment/path.sh
+[2.705s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/environment/path.dsv
+[2.706s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/local_setup.bash
+[2.706s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/local_setup.sh
+[2.706s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/local_setup.zsh
+[2.707s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/local_setup.dsv
+[2.707s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.dsv
+[2.708s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/ament_index/resource_index/packages/tennis_bot_bringup
+[2.709s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/cmake/tennis_bot_bringupConfig.cmake
+[2.710s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/cmake/tennis_bot_bringupConfig-version.cmake
+[2.710s] -- Installing: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/package.xml
+[2.714s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup

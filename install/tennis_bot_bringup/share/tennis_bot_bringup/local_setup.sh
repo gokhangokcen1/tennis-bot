@@ -1,0 +1,1 @@
+/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup/ament_cmake_environment_hooks/local_setup.sh

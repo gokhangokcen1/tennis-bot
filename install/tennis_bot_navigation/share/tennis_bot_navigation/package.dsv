@@ -1,0 +1,9 @@
+source;share/tennis_bot_navigation/hook/pythonpath.ps1
+source;share/tennis_bot_navigation/hook/pythonpath.dsv
+source;share/tennis_bot_navigation/hook/pythonpath.sh
+source;share/tennis_bot_navigation/hook/ament_prefix_path.ps1
+source;share/tennis_bot_navigation/hook/ament_prefix_path.dsv
+source;share/tennis_bot_navigation/hook/ament_prefix_path.sh
+source;../../build/tennis_bot_navigation/share/tennis_bot_navigation/hook/pythonpath_develop.ps1
+source;../../build/tennis_bot_navigation/share/tennis_bot_navigation/hook/pythonpath_develop.dsv
+source;../../build/tennis_bot_navigation/share/tennis_bot_navigation/hook/pythonpath_develop.sh

@@ -1,0 +1,35 @@
+running develop
+Removing /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis-bot-navigation.egg-link (link to .)
+running egg_info
+writing ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/requires.txt
+writing top-level names to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/top_level.txt
+reading manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation/__init__.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation/cmd_vel_relay_node.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build/lib/tennis_bot_navigation/collection_planner_node.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation
+byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation/cmd_vel_relay_node.py to cmd_vel_relay_node.cpython-310.pyc
+byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation/collection_planner_node.py to collection_planner_node.cpython-310.pyc
+running install_data
+copying resource/tennis_bot_navigation -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation
+copying launch/mapping.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+copying launch/navigation.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+copying config/slam_toolbox.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+copying config/nav2_params.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+copying config/planner.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+running install_egg_info
+Copying ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cmd_vel_relay_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+Installing collection_planner_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+writing list of installed files to '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log'

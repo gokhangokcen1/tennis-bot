@@ -1,0 +1,9 @@
+source;share/tennis_bot_perception/hook/pythonpath.ps1
+source;share/tennis_bot_perception/hook/pythonpath.dsv
+source;share/tennis_bot_perception/hook/pythonpath.sh
+source;share/tennis_bot_perception/hook/ament_prefix_path.ps1
+source;share/tennis_bot_perception/hook/ament_prefix_path.dsv
+source;share/tennis_bot_perception/hook/ament_prefix_path.sh
+source;../../build/tennis_bot_perception/share/tennis_bot_perception/hook/pythonpath_develop.ps1
+source;../../build/tennis_bot_perception/share/tennis_bot_perception/hook/pythonpath_develop.dsv
+source;../../build/tennis_bot_perception/share/tennis_bot_perception/hook/pythonpath_develop.sh

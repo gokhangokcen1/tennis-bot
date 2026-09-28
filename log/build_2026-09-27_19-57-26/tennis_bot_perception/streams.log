@@ -1,0 +1,41 @@
+[1.297s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_perception build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/install.log --install-scripts $base/lib/tennis_bot_perception --single-version-externally-managed install_data
+[1.516s] running egg_info
+[1.516s] creating ../../build/tennis_bot_perception/tennis_bot_perception.egg-info
+[1.517s] writing ../../build/tennis_bot_perception/tennis_bot_perception.egg-info/PKG-INFO
+[1.518s] writing dependency_links to ../../build/tennis_bot_perception/tennis_bot_perception.egg-info/dependency_links.txt
+[1.518s] writing entry points to ../../build/tennis_bot_perception/tennis_bot_perception.egg-info/entry_points.txt
+[1.519s] writing requirements to ../../build/tennis_bot_perception/tennis_bot_perception.egg-info/requires.txt
+[1.519s] writing top-level names to ../../build/tennis_bot_perception/tennis_bot_perception.egg-info/top_level.txt
+[1.519s] writing manifest file '../../build/tennis_bot_perception/tennis_bot_perception.egg-info/SOURCES.txt'
+[1.521s] reading manifest file '../../build/tennis_bot_perception/tennis_bot_perception.egg-info/SOURCES.txt'
+[1.522s] writing manifest file '../../build/tennis_bot_perception/tennis_bot_perception.egg-info/SOURCES.txt'
+[1.523s] running build
+[1.523s] running build_py
+[1.523s] creating /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build
+[1.524s] creating /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build/lib
+[1.524s] creating /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build/lib/tennis_bot_perception
+[1.525s] copying tennis_bot_perception/__init__.py -> /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build/lib/tennis_bot_perception
+[1.525s] copying tennis_bot_perception/ball_detector_node.py -> /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build/lib/tennis_bot_perception
+[1.525s] running install
+[1.526s] running install_lib
+[1.528s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis_bot_perception
+[1.528s] copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build/lib/tennis_bot_perception/__init__.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis_bot_perception
+[1.528s] copying /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build/lib/tennis_bot_perception/ball_detector_node.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis_bot_perception
+[1.530s] byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis_bot_perception/__init__.py to __init__.cpython-310.pyc
+[1.531s] byte-compiling /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis_bot_perception/ball_detector_node.py to ball_detector_node.cpython-310.pyc
+[1.533s] running install_data
+[1.533s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/ament_index
+[1.534s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/ament_index/resource_index
+[1.535s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/ament_index/resource_index/packages
+[1.535s] copying resource/tennis_bot_perception -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/ament_index/resource_index/packages
+[1.535s] copying package.xml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception
+[1.536s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/launch
+[1.536s] copying launch/perception.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/launch
+[1.537s] creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/config
+[1.538s] copying config/ball_detector.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/share/tennis_bot_perception/config
+[1.538s] running install_egg_info
+[1.540s] Copying ../../build/tennis_bot_perception/tennis_bot_perception.egg-info to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages/tennis_bot_perception-0.0.0-py3.10.egg-info
+[1.542s] running install_scripts
+[1.567s] Installing ball_detector_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/tennis_bot_perception
+[1.568s] writing list of installed files to '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/install.log'
+[1.644s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_perception' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_perception build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_perception/install.log --install-scripts $base/lib/tennis_bot_perception --single-version-externally-managed install_data

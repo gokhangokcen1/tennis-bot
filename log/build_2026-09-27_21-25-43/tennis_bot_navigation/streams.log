@@ -1,0 +1,22 @@
+[0.899s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_navigation build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log --install-scripts $base/lib/tennis_bot_navigation --single-version-externally-managed install_data
+[1.106s] running egg_info
+[1.107s] writing ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/PKG-INFO
+[1.107s] writing dependency_links to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/dependency_links.txt
+[1.108s] writing entry points to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/entry_points.txt
+[1.108s] writing requirements to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/requires.txt
+[1.108s] writing top-level names to ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/top_level.txt
+[1.110s] reading manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.111s] writing manifest file '../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.111s] running build
+[1.111s] running build_py
+[1.111s] running install
+[1.111s] running install_lib
+[1.113s] running install_data
+[1.113s] running install_egg_info
+[1.116s] removing '/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.117s] Copying ../../build/tennis_bot_navigation/tennis_bot_navigation.egg-info to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis_bot_navigation-0.0.0-py3.10.egg-info
+[1.118s] running install_scripts
+[1.137s] Installing cmd_vel_relay_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[1.137s] Installing collection_planner_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[1.138s] writing list of installed files to '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log'
+[1.177s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_navigation' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tennis_bot_navigation build --build-base /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build install --record /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/install.log --install-scripts $base/lib/tennis_bot_navigation --single-version-externally-managed install_data

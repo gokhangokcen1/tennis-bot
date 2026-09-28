@@ -1,0 +1,31 @@
+[0.040s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description -- -j6 -l6
+[0.600s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description -- -j6 -l6
+[0.614s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description
+[0.624s] -- Install configuration: ""
+[0.624s] -- Execute custom install script
+[0.624s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/urdf/gazebo_control.xacro
+[0.625s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/urdf/gazebo_sensors.xacro
+[0.625s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/urdf/materials.xacro
+[0.626s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/urdf/tennis_bot.urdf.xacro
+[0.627s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/launch/display.launch.py
+[0.627s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/launch/simulation.launch.py
+[0.627s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/config/bridge.yaml
+[0.627s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/config/controllers.yaml
+[0.628s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/config/robot_localization.yaml
+[0.628s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/worlds/tennis_court.sdf
+[0.628s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/ament_index/resource_index/package_run_dependencies/tennis_bot_description
+[0.628s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/ament_index/resource_index/parent_prefix_path/tennis_bot_description
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/environment/ament_prefix_path.sh
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/environment/ament_prefix_path.dsv
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/environment/path.sh
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/environment/path.dsv
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/local_setup.bash
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/local_setup.sh
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/local_setup.zsh
+[0.629s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/local_setup.dsv
+[0.629s] -- Symlinking: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.dsv
+[0.641s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/ament_index/resource_index/packages/tennis_bot_description
+[0.641s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/cmake/tennis_bot_descriptionConfig.cmake
+[0.641s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/cmake/tennis_bot_descriptionConfig-version.cmake
+[0.641s] -- Up-to-date symlink: /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_description/share/tennis_bot_description/package.xml
+[0.644s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_description

@@ -1,0 +1,27 @@
+[2.181s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build --no-deps symlink_data --force
+[2.483s] running develop
+[2.651s] running egg_info
+[2.651s] writing tennis_bot_navigation.egg-info/PKG-INFO
+[2.652s] writing dependency_links to tennis_bot_navigation.egg-info/dependency_links.txt
+[2.652s] writing entry points to tennis_bot_navigation.egg-info/entry_points.txt
+[2.653s] writing requirements to tennis_bot_navigation.egg-info/requires.txt
+[2.653s] writing top-level names to tennis_bot_navigation.egg-info/top_level.txt
+[2.655s] reading manifest file 'tennis_bot_navigation.egg-info/SOURCES.txt'
+[2.658s] writing manifest file 'tennis_bot_navigation.egg-info/SOURCES.txt'
+[2.659s] running build_ext
+[2.659s] Creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis-bot-navigation.egg-link (link to .)
+[2.660s] Installing cmd_vel_relay_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[2.660s] Installing collection_planner_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[2.661s] 
+[2.661s] Installed /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation
+[2.661s] running symlink_data
+[2.661s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/resource/tennis_bot_navigation -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/ament_index/resource_index/packages
+[2.662s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/package.xml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation
+[2.663s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/launch/mapping.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+[2.664s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/launch/navigation.launch.py -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/launch
+[2.664s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/config/slam_toolbox.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[2.665s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/config/nav2_params.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[2.666s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/config/planner.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/config
+[2.667s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/maps/tennis_court.pgm -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/maps
+[2.667s] symbolically linking /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/maps/tennis_court.yaml -> /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/share/tennis_bot_navigation/maps
+[2.732s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build --no-deps symlink_data --force
