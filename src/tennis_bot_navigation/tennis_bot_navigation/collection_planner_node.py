@@ -1,231 +1,358 @@
 import math
-from dataclasses import dataclass
 
 import rclpy
-from action_msgs.msg import GoalStatus
-from geometry_msgs.msg import PoseArray, PoseStamped
-from nav2_msgs.action import NavigateToPose
-from rclpy.action import ActionClient
 from rclpy.node import Node
-from tf2_ros import Buffer, TransformListener
+from rclpy.action import ActionClient
 
-
-@dataclass
-class Ball:
-    x: float
-    y: float
-
-
-def euclidean_distance(x1, y1, x2, y2):
-    return math.hypot(x2 - x1, y2 - y1)
-
-
-def nearest_ball_index(robot_x, robot_y, balls):
-    if not balls:
-        return None
-    return min(
-        range(len(balls)),
-        key=lambda i: euclidean_distance(
-            robot_x, robot_y, balls[i].x, balls[i].y
-        ),
-    )
-
-
-def yaw_to_quaternion(yaw):
-    return math.sin(yaw / 2.0), math.cos(yaw / 2.0)
+from builtin_interfaces.msg import Duration
+from geometry_msgs.msg import PoseArray
+from nav2_msgs.action import NavigateToPose, Spin
 
 
 class CollectionPlannerNode(Node):
-    """Application-level task planner.
-
-    It answers: "Which ball should I visit next?"
-    Nav2 answers: "How do I safely reach that pose?"
-    """
 
     def __init__(self):
         super().__init__("collection_planner_node")
 
-        self.declare_parameter("map_frame", "map")
-        self.declare_parameter("base_frame", "base_link")
-        self.declare_parameter("detection_topic", "/detected_balls")
-        self.declare_parameter("merge_distance_m", 0.35)
-        self.declare_parameter("planning_period_sec", 0.5)
-
-        self.map_frame = self.get_parameter("map_frame").value
-        self.base_frame = self.get_parameter("base_frame").value
-        self.detection_topic = self.get_parameter("detection_topic").value
-        self.merge_distance = float(self.get_parameter("merge_distance_m").value)
-
+        # Known balls
         self.balls = []
+
+        # Balls already visited
         self.collected_balls = []
+
+        # Current navigation target
         self.current_target = None
 
-        self.tf_buffer = Buffer()
-        self.tf_listener = TransformListener(self.tf_buffer, self)
+        # Search state
+        self.search_in_progress = False
 
-        self.nav_client = ActionClient(
-            self, NavigateToPose, "navigate_to_pose"
-        )
-
-        self.create_subscription(
+        # Ball detections
+        self.ball_sub = self.create_subscription(
             PoseArray,
-            self.detection_topic,
-            self.detection_callback,
+            "/detected_balls",
+            self.ball_callback,
             10,
         )
 
+        # Nav2 NavigateToPose action
+        self.nav_client = ActionClient(
+            self,
+            NavigateToPose,
+            "navigate_to_pose",
+        )
+
+        # Nav2 Spin action
+        self.spin_client = ActionClient(
+            self,
+            Spin,
+            "spin",
+        )
+
+        # Planner timer
         self.timer = self.create_timer(
-            float(self.get_parameter("planning_period_sec").value),
+            1.0,
             self.planning_callback,
         )
 
-    def is_near(self, candidate, balls):
-        return any(
-            euclidean_distance(
-                candidate.x, candidate.y, ball.x, ball.y
-            ) < self.merge_distance
-            for ball in balls
+        self.get_logger().info(
+            "Collection planner started."
         )
 
-    def detection_callback(self, msg):
-        if msg.header.frame_id != self.map_frame:
-            self.get_logger().warn(
-                f"Expected '{self.map_frame}', got '{msg.header.frame_id}'"
-            )
-            return
+    # ---------------------------------------------------------
+    # BALL DETECTION
+    # ---------------------------------------------------------
 
+    def ball_callback(self, msg):
         for pose in msg.poses:
-            candidate = Ball(
-                float(pose.position.x),
-                float(pose.position.y),
+
+            ball = (
+                pose.position.x,
+                pose.position.y,
             )
 
-            if self.is_near(candidate, self.collected_balls):
+            # Ignore balls that are already collected
+            if self.is_collected(ball):
                 continue
-            if self.current_target is not None and self.is_near(
-                candidate, [self.current_target]
-            ):
-                continue
-            if not self.is_near(candidate, self.balls):
-                self.balls.append(candidate)
 
-    def robot_pose(self):
-        try:
-            transform = self.tf_buffer.lookup_transform(
-                self.map_frame,
-                self.base_frame,
-                rclpy.time.Time(),
+            # Ignore duplicate detections
+            if self.is_known(ball):
+                continue
+
+            self.balls.append(ball)
+
+            self.get_logger().info(
+                f"New ball detected: "
+                f"x={ball[0]:.2f}, y={ball[1]:.2f}"
             )
-            return (
-                float(transform.transform.translation.x),
-                float(transform.transform.translation.y),
-            )
-        except Exception:
-            return None
+
+    # ---------------------------------------------------------
+    # MAIN PLANNER
+    # ---------------------------------------------------------
 
     def planning_callback(self):
-        if self.current_target is not None or not self.balls:
+
+        # Already travelling to a ball
+        if self.current_target is not None:
             return
+
+        # Currently searching
+        if self.search_in_progress:
+            return
+
+        # We have balls waiting
+        if self.balls:
+            self.navigate_to_nearest_ball()
+            return
+
+        # No balls known -> search
+        self.start_search_spin()
+
+    # ---------------------------------------------------------
+    # NAVIGATE TO BALL
+    # ---------------------------------------------------------
+
+    def navigate_to_nearest_ball(self):
+
         if not self.nav_client.server_is_ready():
+            self.get_logger().info(
+                "Waiting for Nav2 navigate_to_pose action server..."
+            )
             return
 
-        pose = self.robot_pose()
-        if pose is None:
-            return
-        robot_x, robot_y = pose
+        # For now choose the first known ball.
+        # The detected list is already small and continuously updated.
+        ball = self.balls.pop(0)
 
-        idx = nearest_ball_index(robot_x, robot_y, self.balls)
-        if idx is None:
-            return
-
-        self.current_target = self.balls.pop(idx)
-        self.send_goal(
-            self.current_target.x,
-            self.current_target.y,
-            robot_x,
-            robot_y,
-        )
-
-    def send_goal(self, x, y, robot_x, robot_y):
-        yaw = math.atan2(y - robot_y, x - robot_x)
-        qz, qw = yaw_to_quaternion(yaw)
-
-        goal = NavigateToPose.Goal()
-        goal.pose = PoseStamped()
-        goal.pose.header.frame_id = self.map_frame
-        goal.pose.header.stamp = self.get_clock().now().to_msg()
-        goal.pose.pose.position.x = x
-        goal.pose.pose.position.y = y
-        goal.pose.pose.orientation.z = qz
-        goal.pose.pose.orientation.w = qw
+        self.current_target = ball
 
         self.get_logger().info(
-            f"Goal: ({x:.2f}, {y:.2f})"
+            f"Going to ball: "
+            f"x={ball[0]:.2f}, y={ball[1]:.2f}"
         )
+
+        goal = NavigateToPose.Goal()
+
+        goal.pose.header.frame_id = "map"
+
+        goal.pose.header.stamp = self.get_clock().now().to_msg()
+
+        goal.pose.pose.position.x = ball[0]
+        goal.pose.pose.position.y = ball[1]
+
+        goal.pose.pose.orientation.w = 1.0
 
         future = self.nav_client.send_goal_async(
-            goal,
-            feedback_callback=self.feedback_callback,
+            goal
         )
-        future.add_done_callback(self.goal_response_callback)
 
-    def feedback_callback(self, feedback_msg):
-        feedback = feedback_msg.feedback
-        if hasattr(feedback, "distance_remaining"):
-            self.get_logger().debug(
-                f"Distance remaining: {feedback.distance_remaining:.2f} m"
-            )
+        future.add_done_callback(
+            self.navigation_goal_response_callback
+        )
 
-    def goal_response_callback(self, future):
-        try:
-            goal_handle = future.result()
-        except Exception as exc:
-            self.get_logger().error(f"Goal request failed: {exc}")
-            self.requeue_target()
-            return
+    # ---------------------------------------------------------
+    # NAVIGATION RESPONSE
+    # ---------------------------------------------------------
+
+    def navigation_goal_response_callback(self, future):
+
+        goal_handle = future.result()
 
         if not goal_handle.accepted:
-            self.get_logger().warn("Goal rejected")
-            self.requeue_target()
-            return
 
-        result_future = goal_handle.get_result_async()
-        result_future.add_done_callback(self.result_callback)
+            self.get_logger().warn(
+                "Navigation goal rejected."
+            )
 
-    def result_callback(self, future):
-        try:
-            wrapped = future.result()
-        except Exception as exc:
-            self.get_logger().error(f"Navigation result failed: {exc}")
-            self.requeue_target()
-            return
-
-        if wrapped.status == GoalStatus.STATUS_SUCCEEDED:
-            self.collected_balls.append(self.current_target)
-            self.get_logger().info("Target reached; marking ball collected")
             self.current_target = None
             return
 
-        self.get_logger().warn(
-            f"Navigation failed with status {wrapped.status}"
+        self.get_logger().info(
+            "Navigation goal accepted."
         )
-        self.requeue_target()
 
-    def requeue_target(self):
-        if self.current_target is not None and not self.is_near(
-            self.current_target, self.balls
-        ):
-            self.balls.append(self.current_target)
+        result_future = goal_handle.get_result_async()
+
+        result_future.add_done_callback(
+            self.navigation_result_callback
+        )
+
+    # ---------------------------------------------------------
+    # NAVIGATION RESULT
+    # ---------------------------------------------------------
+
+    def navigation_result_callback(self, future):
+
+        result = future.result()
+
+        status = result.status
+
+        if status == 4:
+
+            self.get_logger().info(
+                "Reached ball."
+            )
+
+            if self.current_target is not None:
+
+                self.collected_balls.append(
+                    self.current_target
+                )
+
+        else:
+
+            self.get_logger().warn(
+                f"Navigation finished with status: {status}"
+            )
+
         self.current_target = None
+
+    # ---------------------------------------------------------
+    # SEARCH
+    # ---------------------------------------------------------
+
+    def start_search_spin(self):
+
+        if not self.spin_client.server_is_ready():
+
+            self.get_logger().info(
+                "Waiting for Nav2 spin action server..."
+            )
+
+            return
+
+        self.search_in_progress = True
+
+        self.get_logger().info(
+            "No known balls. Starting 360-degree search."
+        )
+
+        goal = Spin.Goal()
+
+        goal.target_yaw = float(2.0 * math.pi)
+
+        goal.time_allowance = Duration(
+            sec=20,
+            nanosec=0,
+        )
+
+        future = self.spin_client.send_goal_async(
+            goal,
+            feedback_callback=self.spin_feedback_callback,
+        )
+
+        future.add_done_callback(
+            self.spin_goal_response_callback
+        )
+
+    # ---------------------------------------------------------
+    # SPIN RESPONSE
+    # ---------------------------------------------------------
+
+    def spin_goal_response_callback(self, future):
+
+        goal_handle = future.result()
+
+        if not goal_handle.accepted:
+
+            self.get_logger().warn(
+                "Spin goal rejected."
+            )
+
+            self.search_in_progress = False
+            return
+
+        self.get_logger().info(
+            "360-degree search started."
+        )
+
+        result_future = goal_handle.get_result_async()
+
+        result_future.add_done_callback(
+            self.spin_result_callback
+        )
+
+    # ---------------------------------------------------------
+    # SPIN FEEDBACK
+    # ---------------------------------------------------------
+
+    def spin_feedback_callback(self, feedback_msg):
+
+        # Feedback is intentionally not printed continuously.
+        pass
+
+    # ---------------------------------------------------------
+    # SPIN RESULT
+    # ---------------------------------------------------------
+
+    def spin_result_callback(self, future):
+
+        self.search_in_progress = False
+
+        if self.balls:
+
+            self.get_logger().info(
+                f"360-degree search completed. "
+                f"Found {len(self.balls)} ball(s)."
+            )
+
+        else:
+
+            self.get_logger().info(
+                "360-degree search completed. "
+                "No balls found."
+            )
+
+    # ---------------------------------------------------------
+    # HELPERS
+    # ---------------------------------------------------------
+
+    def is_known(self, ball):
+
+        tolerance = 0.30
+
+        for known in self.balls:
+
+            distance = math.sqrt(
+                (known[0] - ball[0]) ** 2
+                +
+                (known[1] - ball[1]) ** 2
+            )
+
+            if distance < tolerance:
+                return True
+
+        return False
+
+    def is_collected(self, ball):
+
+        tolerance = 0.50
+
+        for collected in self.collected_balls:
+
+            distance = math.sqrt(
+                (collected[0] - ball[0]) ** 2
+                +
+                (collected[1] - ball[1]) ** 2
+            )
+
+            if distance < tolerance:
+                return True
+
+        return False
 
 
 def main(args=None):
+
     rclpy.init(args=args)
+
     node = CollectionPlannerNode()
+
     try:
         rclpy.spin(node)
+
     except KeyboardInterrupt:
         pass
+
     finally:
         node.destroy_node()
         rclpy.shutdown()

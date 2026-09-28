@@ -1,7 +1,0 @@
-collection_planner_node:
-  ros__parameters:
-    map_frame: "map"
-    base_frame: "base_link"
-    detection_topic: "/detected_balls"
-    merge_distance_m: 0.35
-    planning_period_sec: 0.5

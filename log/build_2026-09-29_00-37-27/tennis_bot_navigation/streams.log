@@ -1,0 +1,18 @@
+[1.501s] Invoking command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build --no-deps symlink_data
+[1.738s] running develop
+[1.877s] running egg_info
+[1.877s] writing tennis_bot_navigation.egg-info/PKG-INFO
+[1.878s] writing dependency_links to tennis_bot_navigation.egg-info/dependency_links.txt
+[1.878s] writing entry points to tennis_bot_navigation.egg-info/entry_points.txt
+[1.878s] writing requirements to tennis_bot_navigation.egg-info/requires.txt
+[1.878s] writing top-level names to tennis_bot_navigation.egg-info/top_level.txt
+[1.880s] reading manifest file 'tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.881s] writing manifest file 'tennis_bot_navigation.egg-info/SOURCES.txt'
+[1.883s] running build_ext
+[1.883s] Creating /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages/tennis-bot-navigation.egg-link (link to .)
+[1.884s] Installing cmd_vel_relay_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[1.884s] Installing collection_planner_node script to /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/tennis_bot_navigation
+[1.885s] 
+[1.885s] Installed /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation
+[1.885s] running symlink_data
+[1.931s] Invoked command in '/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation' returned '0': PYTHONPATH=/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_navigation/build --no-deps symlink_data
