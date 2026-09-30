@@ -1,4 +1,5 @@
 /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/launch/tennis_bot.launch.py
+/home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/rviz/tennis_bot.rviz
 /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/ament_index/resource_index/package_run_dependencies/tennis_bot_bringup
 /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/ament_index/resource_index/parent_prefix_path/tennis_bot_bringup
 /home/g0kh4n_2/tennis_bot_ws/install/tennis_bot_bringup/share/tennis_bot_bringup/environment/ament_prefix_path.sh

@@ -14,6 +14,10 @@ def generate_launch_description():
     desc = get_package_share_directory("tennis_bot_description")
     perc = get_package_share_directory("tennis_bot_perception")
     nav = get_package_share_directory("tennis_bot_navigation")
+    bringup = get_package_share_directory("tennis_bot_bringup")
+
+
+    rviz_config = os.path.join(bringup, "rviz", "tennis_bot.rviz")
 
     simulation = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -31,10 +35,13 @@ def generate_launch_description():
         )
     )
 
+    
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
         name="rviz2",
+        arguments=["-d", rviz_config],
+        parameters=[{"use_sim_time": True}],
         condition=IfCondition(rviz),
         output="screen",
     )

@@ -315,8 +315,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "DESTINATION" "share/tennis_bot_bringup")
-ament_cmake_symlink_install_directory("/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup" DIRECTORY "launch" "DESTINATION" "share/tennis_bot_bringup")
+# install(DIRECTORY "launch" "rviz" "DESTINATION" "share/tennis_bot_bringup")
+ament_cmake_symlink_install_directory("/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup" DIRECTORY "launch" "rviz" "DESTINATION" "share/tennis_bot_bringup")
 
 # install(FILES "/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/tennis_bot_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/g0kh4n_2/tennis_bot_ws/src/tennis_bot_bringup" FILES "/home/g0kh4n_2/tennis_bot_ws/build/tennis_bot_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/tennis_bot_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
