@@ -2,13 +2,13 @@ controller_manager:
   ros__parameters:
     update_rate: 100
     joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
+      type: joint_state_broadcaster/JointStateBroadcaster # tekerlek açılarını /joint_states'e basar
     diff_drive_controller:
-      type: diff_drive_controller/DiffDriveController
+      type: diff_drive_controller/DiffDriveController # asıl sürücümüz
 
 diff_drive_controller:
   ros__parameters:
-    left_wheel_names: [left_wheel_joint]
+    left_wheel_names: [left_wheel_joint] # urdf jointleri
     right_wheel_names: [right_wheel_joint]
 
     wheel_separation: 0.42
@@ -17,13 +17,12 @@ diff_drive_controller:
     odom_frame_id: odom
     base_frame_id: base_link
 
-    position_feedback: true
-    open_loop: false
+    position_feedback: true # odometry'i tekerlek pozisyonundan hesapla hızından değil 
+    open_loop: false 
 
-    # EKF owns odom -> base_link.
-    enable_odom_tf: true 
+    enable_odom_tf: true # odom -> base_link TF'i publish et
 
-    cmd_vel_timeout: 0.5
+    cmd_vel_timeout: 0.5 #0.5 sn komut gelmezse dur
     publish_rate: 50.0
     velocity_rolling_window_size: 10
     use_stamped_vel: false
