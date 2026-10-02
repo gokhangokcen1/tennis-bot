@@ -66,6 +66,7 @@ class BallDetectorNode(Node):
 
         self.camera_info = None
 
+    # --------------- SUBSCRIBERS ------------------
         self.create_subscription(
             CameraInfo,
             self.camera_info_topic,
@@ -81,6 +82,8 @@ class BallDetectorNode(Node):
             slop=float(self.get_parameter("sync_slop_sec").value),
         )
         self.sync.registerCallback(self.image_callback)
+
+    # # ------------- PUBLISHERS -----------------
 
         self.camera_pub = self.create_publisher(
             PoseArray, "/detected_balls_camera", 10
@@ -103,6 +106,9 @@ class BallDetectorNode(Node):
     def camera_info_callback(self, msg):
         self.camera_info = msg
 
+    # Kamera 2 boyutlu algılıyor, bunu derinlik ve piksel bilgileri sayesinde
+    # 3 boyutlu haritamıza, gerçeğe dönüştürüyoruz.
+    # u: satır, v: sütun, z: derinlik  
     @staticmethod
     def project_pixel_to_3d(u, v, depth_m, fx, fy, cx, cy):
         if depth_m <= 0:
